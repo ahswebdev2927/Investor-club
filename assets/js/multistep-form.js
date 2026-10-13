@@ -43,6 +43,21 @@
           300
         );
       }
+
+      // Track Form Step View in Google Analytics 4
+      if (typeof window.gtag === "function") {
+        var stepNames = [
+          "Contact Information",
+          "Background & Demographics",
+          "Investment & Value Contribution",
+          "Business Concepts & Proposals"
+        ];
+        window.gtag("event", "form_step_view", {
+          form_name: "investors_proposal_form",
+          step_number: step,
+          step_name: stepNames[step - 1] || ("Step " + step)
+        });
+      }
     }
 
     // Toggle "Other" Educational Qualification input
@@ -305,6 +320,17 @@
 
       var $result = $form.parent().find(".result");
       var $btn = $("#submitMultiStepForm");
+
+      // Track Proposal Submission Conversion in Google Analytics 4
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "generate_lead", {
+          form_name: "investors_proposal_form",
+          has_attachment: !!($fileInput[0] && $fileInput[0].files.length),
+          engagement_mode: engagementMode,
+          investment_range: investmentRange,
+          qualification: qualification
+        });
+      }
 
       // UI Submitting state
       $btn.prop("disabled", true).css("opacity", "0.7");

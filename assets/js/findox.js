@@ -986,6 +986,38 @@
   // Fail-safe preloader dismissal (guarantees preloader never hangs if external resource is delayed)
   $(document).ready(function () {
     setTimeout(hidePreloader, 800);
+
+    // Track Floating WhatsApp clicks in Google Analytics 4
+    $(document).on("click", ".floating-whatsapp, a[href*='api.whatsapp.com'], a[href*='wa.me']", function () {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "contact_whatsapp_click", {
+          event_category: "Engagement",
+          event_label: "WhatsApp Support Chat"
+        });
+      }
+    });
+
+    // Track Direct Phone Call clicks
+    $(document).on("click", "a[href^='tel:']", function () {
+      var phoneNum = $(this).attr("href").replace("tel:", "");
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "contact_phone_click", {
+          event_category: "Engagement",
+          phone_number: phoneNum
+        });
+      }
+    });
+
+    // Track Direct Email Mailto clicks
+    $(document).on("click", "a[href^='mailto:']", function () {
+      var emailAddr = $(this).attr("href").replace("mailto:", "");
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "contact_email_click", {
+          event_category: "Engagement",
+          email_address: emailAddr
+        });
+      }
+    });
   });
   setTimeout(hidePreloader, 1500);
 })(jQuery);
