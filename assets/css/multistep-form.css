@@ -866,6 +866,15 @@
     color: #64748B;
     margin-bottom: 0;
 }
+.founder-card-cta-btn:hover {
+    background: #238b72 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(43, 169, 139, 0.5) !important;
+    color: #ffffff !important;
+}
+.founder-card-cta-btn:hover i {
+    transform: translateX(4px);
+}
 
 .founder-work-item {
     display: flex;
