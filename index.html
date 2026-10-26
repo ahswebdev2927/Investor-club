@@ -187,7 +187,19 @@
                     </div><!-- /.col-xxl-6 -->
                     <div class="col-xxl-6 col-xl-6 ps-xl-4 text-center text-xl-end">
                         <div class="hero-one__image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-                            <img src="assets/images/hero-slider/hero-1-1.png" alt="Investors Factory Building Global Business Empires" class="img-fluid" style="border-radius: 12px;">
+                            <div class="hero-video-preview">
+                                <video poster="assets/images/hero-slider/hero-1-1.png" muted loop playsinline autoplay preload="metadata">
+                                    <source src="assets/videos/investorsclub.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-overlay-gradient"></div>
+                                <a href="#video-modal-overview" class="video-play-btn-ripple video-modal-btn" title="Watch Investors Club Story in HD">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <div class="hero-video-badge">
+                                    <span class="title"><i class="fas fa-play-circle me-2" style="color: #1B9B8A;"></i>Investors Club in Motion</span>
+                                    <span class="tag">HD Watch</span>
+                                </div>
+                            </div>
                         </div><!-- /.hero-one__image -->
                     </div><!-- /.col-xxl-6 -->
                 </div><!-- /.row -->
@@ -268,6 +280,79 @@
                 </div>
             </div><!-- /.container -->
         </section><!-- /.features-one -->
+
+        <!-- ==================== FEATURED VIDEOS SPOTLIGHT ==================== -->
+        <section class="featured-video-section" id="featured-videos">
+            <div class="container">
+                <div class="sec-title text-center mb-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
+                    <div class="sec-title__top justify-content-center" style='--tagline-bg: #ECF5F4'>
+                        <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="shape" class="sec-title__shape">
+                        <p class="sec-title__tagline">INSIDE INVESTORS CLUB</p>
+                    </div>
+                    <h2 class="sec-title__title" style='--title-color: #0B1F3A'>Watch Our Ecosystem in Action</h2>
+                    <p class="text-muted mt-2" style="max-width: 680px; margin: 0 auto;">Discover how ideas, strategic capital, and active operational leadership come together to turn ambitious concepts into thriving enterprises.</p>
+                </div>
+
+                <div class="row gutter-y-40 justify-content-center">
+                    <!-- Video Card 1 -->
+                    <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
+                        <div class="video-card-premium">
+                            <div class="video-card-media">
+                                <video controls playsinline preload="metadata">
+                                    <source src="assets/videos/investorsclub.mp4" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
+                            </div>
+                            <div class="video-card-body">
+                                <span class="video-tagline"><i class="fas fa-compass me-1"></i> Ecosystem Vision</span>
+                                <h3 class="video-card-title">The Investors Club: Connecting Ideas, Capital & Management</h3>
+                                <p class="video-card-text">
+                                    Explore the foundational concept of the Investors Club. Where visionary entrepreneurs, accredited angel investors, and experienced operators collaborate systematically to execute high-impact ventures.
+                                </p>
+                                <div class="video-card-footer">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="fas fa-film text-muted"></i>
+                                        <span class="text-muted small fw-semibold">Platform Briefing</span>
+                                    </div>
+                                    <a href="#video-modal-overview" class="findox-btn findox-btn--base video-modal-btn" style="padding: 10px 22px; font-size: 13px;">
+                                        <span class="findox-btn__text"><i class="fas fa-expand me-1"></i> Reel View</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+                        <div class="video-card-premium">
+                            <div class="video-card-media">
+                                <video controls playsinline preload="metadata">
+                                    <source src="assets/videos/investorsclub-2.mp4" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
+                            </div>
+                            <div class="video-card-body">
+                                <span class="video-tagline"><i class="fas fa-lightbulb me-1"></i> Founder's Thesis</span>
+                                <h3 class="video-card-title">Building Global Business Empires: The Collaborative Journey</h3>
+                                <p class="video-card-text">
+                                    Dr. Martha Ramakrishna outlines the philosophy of collaborative wealth creation and execution. Learn why execution capability and mutual trust are the true differentiators in enterprise building.
+                                </p>
+                                <div class="video-card-footer">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="fas fa-user-tie text-muted"></i>
+                                        <span class="text-muted small fw-semibold">Leadership Thesis</span>
+                                    </div>
+                                    <a href="#video-modal-journey" class="findox-btn findox-btn--base video-modal-btn" style="padding: 10px 22px; font-size: 13px;">
+                                        <span class="findox-btn__text"><i class="fas fa-expand me-1"></i> Cinematic View</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.featured-video-section -->
+
 
         <section class="about-one section-space-b">
             <div class="container">
@@ -2781,7 +2866,27 @@
     </a>
 
 
+    <!-- ==================== VIDEO MODALS ==================== -->
+    <div id="video-modal-overview" class="mfp-hide video-modal-container">
+        <div class="modal-header-bar">
+            <h4><i class="fas fa-play-circle me-2 text-primary"></i>Investors Club - Ecosystem Overview</h4>
+        </div>
+        <video controls playsinline preload="none">
+            <source src="assets/videos/investorsclub.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="video-modal-journey" class="mfp-hide video-modal-container">
+        <div class="modal-header-bar">
+            <h4><i class="fas fa-user-tie me-2 text-primary"></i>Founder's Vision & Enterprise Journey</h4>
+        </div>
+        <video controls playsinline preload="none">
+            <source src="assets/videos/investorsclub-2.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <script src="assets/vendors/jquery/jquery-3.7.1.min.js"></script>
+
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
     <script src="assets/vendors/jarallax/jarallax.min.js"></script>

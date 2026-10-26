@@ -237,10 +237,34 @@
       mainClass: "mfp-fade",
       removalDelay: 160,
       preloader: true,
-
       fixedContentPos: false,
     });
   }
+
+  if ($(".video-modal-btn").length) {
+    $(".video-modal-btn").magnificPopup({
+      type: "inline",
+      midClick: true,
+      mainClass: "mfp-fade mfp-video-custom-modal",
+      removalDelay: 200,
+      callbacks: {
+        open: function () {
+          var targetVideo = $(this.content).find("video").get(0);
+          if (targetVideo) {
+            targetVideo.currentTime = 0;
+            targetVideo.play();
+          }
+        },
+        close: function () {
+          var targetVideo = $(this.content).find("video").get(0);
+          if (targetVideo) {
+            targetVideo.pause();
+          }
+        }
+      }
+    });
+  }
+
 
   if ($(".img-popup").length) {
     var groups = {};
