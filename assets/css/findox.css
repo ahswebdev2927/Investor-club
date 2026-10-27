@@ -17454,6 +17454,44 @@ a.social-links--static:hover .social-links__icon {
     padding-top: 40px;
   }
 }
+
+/* ==============================================================
+   COMPACT & ELEGANT PAGE HEADER (ABOUT, SERVICES, CONTACT)
+   ============================================================== */
+.page-header {
+  margin-top: 85px;
+  padding-top: 140px !important;
+  padding-bottom: 75px !important;
+}
+.page-header__title {
+  font-size: 44px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.2 !important;
+}
+.page-header .findox-breadcrumb {
+  margin-top: 6px !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 1199px) {
+  .page-header {
+    margin-top: 0px;
+    padding-top: 130px !important;
+    padding-bottom: 60px !important;
+  }
+  .page-header__title {
+    font-size: 38px !important;
+  }
+}
+@media (max-width: 767px) {
+  .page-header {
+    margin-top: 0px;
+    padding-top: 120px !important;
+    padding-bottom: 50px !important;
+  }
+  .page-header__title {
+    font-size: 32px !important;
+  }
+}
 .hero-one .row.align-items-center {
   align-items: stretch !important;
 }
