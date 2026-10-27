@@ -17460,37 +17460,37 @@ a.social-links--static:hover .social-links__icon {
    ============================================================== */
 .page-header {
   margin-top: 85px;
-  padding-top: 135px !important;
-  padding-bottom: 75px !important;
+  padding-top: 185px !important;
+  padding-bottom: 110px !important;
 }
 .page-header__title {
-  font-size: 44px !important;
-  margin-bottom: 8px !important;
+  font-size: 50px !important;
+  margin-bottom: 12px !important;
   line-height: 1.2 !important;
 }
 .page-header .findox-breadcrumb {
-  margin-top: 6px !important;
+  margin-top: 10px !important;
   margin-bottom: 0 !important;
-  font-size: 15px !important;
+  font-size: 16px !important;
 }
 @media (max-width: 1199px) {
   .page-header {
     margin-top: 0px;
-    padding-top: 130px !important;
-    padding-bottom: 60px !important;
+    padding-top: 160px !important;
+    padding-bottom: 85px !important;
   }
   .page-header__title {
-    font-size: 38px !important;
+    font-size: 44px !important;
   }
 }
 @media (max-width: 767px) {
   .page-header {
     margin-top: 0px;
-    padding-top: 115px !important;
-    padding-bottom: 50px !important;
+    padding-top: 140px !important;
+    padding-bottom: 70px !important;
   }
   .page-header__title {
-    font-size: 30px !important;
+    font-size: 34px !important;
   }
 }
 
