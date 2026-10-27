@@ -3,7 +3,7 @@ header('Content-Type: application/json; charset=utf-8');
 
 // Target recipient email
 define("RECIPIENT_NAME", "Investors Club");
-define("RECIPIENT_EMAIL", "investorclubofficial@gmail.com");
+define("RECIPIENT_EMAIL", "investorsclubofficial7@gmail.com");
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
