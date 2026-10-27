@@ -17460,36 +17460,55 @@ a.social-links--static:hover .social-links__icon {
    ============================================================== */
 .page-header {
   margin-top: 85px;
-  padding-top: 140px !important;
-  padding-bottom: 75px !important;
+  padding-top: 105px !important;
+  padding-bottom: 45px !important;
 }
 .page-header__title {
-  font-size: 44px !important;
-  margin-bottom: 8px !important;
+  font-size: 38px !important;
+  margin-bottom: 6px !important;
   line-height: 1.2 !important;
 }
 .page-header .findox-breadcrumb {
-  margin-top: 6px !important;
+  margin-top: 4px !important;
   margin-bottom: 0 !important;
+  font-size: 14px !important;
 }
 @media (max-width: 1199px) {
   .page-header {
     margin-top: 0px;
-    padding-top: 130px !important;
-    padding-bottom: 60px !important;
+    padding-top: 110px !important;
+    padding-bottom: 40px !important;
   }
   .page-header__title {
-    font-size: 38px !important;
+    font-size: 34px !important;
   }
 }
 @media (max-width: 767px) {
   .page-header {
     margin-top: 0px;
-    padding-top: 120px !important;
-    padding-bottom: 50px !important;
+    padding-top: 100px !important;
+    padding-bottom: 35px !important;
   }
   .page-header__title {
-    font-size: 32px !important;
+    font-size: 28px !important;
+  }
+}
+
+/* Founder Spotlight Section Compact Height */
+.founder-spotlight-section {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+.founder-spotlight-wrapper {
+  padding: 40px 40px !important;
+}
+@media (max-width: 991px) {
+  .founder-spotlight-section {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+  .founder-spotlight-wrapper {
+    padding: 30px 20px !important;
   }
 }
 .hero-one .row.align-items-center {
