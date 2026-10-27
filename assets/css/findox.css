@@ -17440,6 +17440,20 @@ a.social-links--static:hover .social-links__icon {
 /* ==============================================================
    PREMIUM VIDEO STYLES - INVESTORS CLUB
    ============================================================== */
+.hero-one {
+  padding-bottom: 70px !important;
+}
+.features-one {
+  padding-top: 60px;
+}
+@media (max-width: 991px) {
+  .hero-one {
+    padding-bottom: 45px !important;
+  }
+  .features-one {
+    padding-top: 40px;
+  }
+}
 .hero-one .row.align-items-center {
   align-items: stretch !important;
 }
